@@ -39,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.007.com/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  vehicles pagina
+  vehicles pagina </br>
   <img src="readme-images/vehiclespic.jpg" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  experiences pagina </br>
   <img src="readme-images/experiencespic.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
