@@ -18,6 +18,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Auteur:
   Maya Coelho
 
+  link github mayze2001.github.io
+
   #### Je startniveau:
   blauw
 
