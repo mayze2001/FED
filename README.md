@@ -18,7 +18,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Auteur:
   Maya Coelho
 
-  link github mayze2001.github.io
+  link github [mayze2001.github.io](https://mayze2001.github.io/FED/)
 
   #### Je startniveau:
   blauw
