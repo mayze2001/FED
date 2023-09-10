@@ -82,10 +82,10 @@ Filters worden niet voorgelezen door de narrator, alleen de eerste categorie hie
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
 ## Home page 
-<img src="readme-images/homepageannotaties.png" width="375px" alt="breakdown van de hele pagina">
+<img src="readme-images/homepageannotaties.PNG" width="375px" alt="breakdown van de hele pagina">
 
 ## Dames page
-<img src="readme-images/damespageannotaties.png" width="375px" alt="breakdown van de hele pagina">
+<img src="readme-images/damespageannotaties.PNG" width="375px" alt="breakdown van de hele pagina">
 
   ### de hele pagina: 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
