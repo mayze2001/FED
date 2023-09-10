@@ -60,6 +60,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+De pagina heeft in het algemeen weinig kleurgebruik, waardoor mensen met kleurblindheid er geen problemen mee zullen hebben. 
+Er wordt gebruik gemaakt van descriptieve teksten bij de error messages, waardoor dit ook voor kleurblinden duidelijk blijft.
+De keyboard navigator is niet compleet. Bij het einde van de pagina kan je niet door klikken en blijft deze vast zitten.
+Het is niet compleet responsive, want als je een mobiel apparaat op horizontaal zet, moet je de pagina opnieuw laden, want hij is anders niet goed weergeefbaar.
+Ook kan je bij horizontaal niet goed op de nav klikken, de tekst overlapt.
+In de code van de site kan je geen H1 vinden. Ook op het moment van testen met de narrator, kon je merken dat er niet genoeg heading levels zijn, waardoor het luisteren hier naar heel verwarrend is.
+De alt van de afbeeldingen zijn niet descriptief, ze zeggen alleen welke categorie schoen het is maar omschrijven het product niet.
+Er waren geen videos of audios, dus hier kon ik ook geen tests mee uitvoeren.
+Verder waren er ook geen flashy animaties, alleen een paar bewegingen in de banners die heel sloom bewogen met de hover functie.
+De kleuren die de site gebruikt (rood, wit & zwart) hebben goed contrast, alles is leesbaar.
+Filters worden niet voorgelezen door de narrator, alleen de eerste categorie hiervan wordt voorgelezen als een H2.
+
 </details>
 
 
