@@ -88,7 +88,7 @@ Filters worden niet voorgelezen door de narrator, alleen de eerste categorie hie
 <img src="readme-images/damespageannotaties.PNG" width="375px" alt="breakdown van de hele pagina">
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/damespageannotaties.PNG" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
