@@ -99,8 +99,7 @@ Filters worden niet voorgelezen door de narrator, alleen de eerste categorie hie
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Ik vond het weer even moeilijk om weer te beginnen met coderen maar nu ik eenmaal ben begonnen is het alleen maar kwestie van verder werken
 
   ### Agenda voor meeting
   samen met je groepje opstellen
