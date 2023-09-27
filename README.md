@@ -99,25 +99,12 @@ Filters worden niet voorgelezen door de narrator, alleen de eerste categorie hie
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-Ik vond het weer even moeilijk om weer te beginnen met coderen maar nu ik eenmaal ben begonnen is het alleen maar kwestie van verder werken
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+Ik vond het weer even moeilijk om weer te beginnen met coderen maar nu ik eenmaal ben begonnen is het alleen maar kwestie van verder werken.
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  
+Feedback: De eerste banner proberen in de header te zetten. Een section maken van de artikels van de schoenen op de dames schoenen page.
+Bedenken als microinteractie: producten in de winkel mand zetten, dus als je op het plusje drukt dat het dan als nummertje naast het mandje verschijnt.
 
 </details>
 
@@ -131,30 +118,16 @@ Ik vond het weer even moeilijk om weer te beginnen met coderen maar nu ik eenmaa
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+ Vragen voor student assistent:
+ 1) waarom gaat de image raar strectchen als ik max width zet?
+2) waarom gaat de text van mijn 3e section (gele background) onder elkaar in plaats van naast elkaar?
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+Feedback: class op de body van elke pagina zetten zodat de css niet in de war raakt als ik nth of type gebruik op het moment van properties toevoegen.
+Ook minder classes gebruiken waar mogelijk. De algemene site margins weg halen zodat mijn site goed tot de rand zichtbaar is.
 
 </details>
-
-
 
 
 
@@ -164,8 +137,16 @@ Ik vond het weer even moeilijk om weer te beginnen met coderen maar nu ik eenmaa
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  1. De screen reader/narrator leest alle elementen in volgorde voor.
+  2. Het geeft het lijst nummer van de li elementen aan.
+  3. Het leest de level van de H elementen voor.
+  4. Leest gallery elementen goed voor, eerst de alt tekst van de afbeelding en dan de tekst dat erbij hoort.
+  5. De paragraven zijn goed verdeelt, zodat alle tekst per levels duidelijk kan worden voorgelezen.
 
+In vergelijking met de daadwerkelijke "vans.nl" is deze wat beter te navigeren met de screen reader, hij leest hier wel alles voor en gaat in de juiste volgorde, ook geeft de narrator aan waar 
+klikbaare links zijn en waar niet. Over het algemeen vondt ik mijn website veel beter te werken voor de screen reader dan de echte website. Dit kan liggen aan dat ik de juiste elementen en volgorde heb gebruikt in
+de html. In de code van de echte website kon ik niet zo goed zien wat er in dit aspect in de code fout ging, maar in het kort, wat ik tot nu toe heb op mijn website versie werkt veel toegankelijker dan de echte
+webshop die ik na maak.
 </details>
 
 
@@ -179,17 +160,6 @@ Ik vond het weer even moeilijk om weer te beginnen met coderen maar nu ik eenmaa
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
