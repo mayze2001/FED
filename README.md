@@ -159,15 +159,15 @@ webshop die ik na maak.
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik liep best achter maar ging kijhard aan het werk en heb heel veel gedaan nog. Had wat problemen maar zijn allemaal goed gekomen.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - schoenen in artikel zetten
+  - opschieten
+  
+ 
 
 </details>
 
