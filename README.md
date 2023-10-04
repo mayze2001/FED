@@ -181,19 +181,28 @@ webshop die ik na maak.
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/screenshot.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/screenshot2.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/screenshot3.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/screenshot4.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+Na veel lezen, tutorials en proberen heb ik heet voor melkaar gekregen om specifieke elementen wel of niet te laten zien en dan omruilen met anderen, liggend aan de scherm breedte.
+Bij voorbeeld hier in de kleine en grotere navigaties.
+  <img src="readme-images/screenshot5.png" width="375px" alt="top">
+  <img src="readme-images/screenshot6.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+De borders van de navigatie van de kleine schermen schaalt niet mee, heb van alles geprobeerd.
+  <img src="readme-images/screenshot7.png" width="375px" alt="bummer">
+  In middel schermen tussen klein en groot gaan sommige dingen fout ook al de elementen responsive horen te werken.
+  <img src="readme-images/screenshot8.png" width="375px" alt="bummer">
 </details>
 
 
@@ -209,8 +218,9 @@ webshop die ik na maak.
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. [bron 1](https://www.w3schools.com/css/css3_buttons.asp)
+  2. [bron 2](https://www.w3schools.com/css/css3_flexbox.asp)
+  3. [bron 3](https://www.w3schools.com/css/css_grid.asp)
+  4. [bron 4](https://chat.openai.com) meerdere error vragen en hulp bij javascript linken
 
 </details>
