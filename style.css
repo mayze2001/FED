@@ -2,76 +2,174 @@
     margin: 0;
     padding: 0;
 }
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
+/* laat de knop die naar boven brengt smooth scrollen */
+html {
+    scroll-behavior: smooth;
 }
-
-nav:nth-of-type(1) {
-    display: flex;
+/* lettertype blijkt deze te zijn */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* navigatie van kleine schermen, staatop block als het kleine schermen detecteerd en anders in de media uitgezet en omruilt door de andere navigatie */
+.navhome {
+    display: block;
     background-color: rgb(255, 255, 255);
     position: relative;
-   
+
 }
 
-ul:nth-of-type(1) {
+.navhome>ul {
     display: flex;
     text-decoration: none;
     list-style-type: none;
-    margin-top: 1em;
+    margin-top: 0em;
 
 }
 
-nav li {
-    margin-right: 35px; 
-    padding-right: 3.5px; 
-    padding-top: 1px;
-    border-right: 0.1em solid #242323; 
-  }
-
-  nav li:last-child {
+.navhome>ul>li {
+    margin-right: 2.1875em;
+    padding-right: 0.21875em;
+    padding-top: 0.0625em;
+    border-right: 0.1em solid #242323;
+}
+/* geeft de iconen lijnen of randen tussen elkaar net zoals de echte site, beweegt raar niet mee */
+.navhome>ul>li:last-child {
     border-right: none;
-  }   
-  nav li:first-child {
+}
+
+.navhome>ul>li:first-child {
     border-right: none;
-  }   
+}
+/* verbergt de navigatie voor grotere schermen tot aangeroepen in media */
+.navhomedesk {
+    display: none;
+    position: relative;
+}
+
+.navhomedesk>ul {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 33em;
+}
+
+.navhomedesk>ul>li {
+    margin-left: 1em;
+    padding-right: 0em;
+    padding-top: 0em;
+    padding-left: 0em;
+    padding-right: 0em;
+    white-space: nowrap;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    top: 3em;
+}
+
+.navhomedesk>ul>li:last-of-type {
+    position: relative;
+    left: 15em;
+    top: 2em;
+}
+
+/* Stijl voor de  search bar container */
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 88em;
+    top: -1em;
+}
+
+/* stijl voor de search bar input field */
+.search-bar input[type="text"] {
+    padding: 0.3125em;
+    border: none;
+    border-bottom: 0.0625em solid #0c0c0c;
+    margin-right: 0.3125em;
+
+}
+
+.search-bar-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* zoekknop image stijl */
+.search-bar button>img {
+    width: 1.8em;
+}
 
 
+
+/* Media query voor weidere schermen dan 768px */
+@media (min-width: 769px) {
+
+    /* haalt mobile navigatie menu weg en verplaatst met die voor grotere schermen */
+    .navhome {
+        display: none;
+    }
+
+    .navhomedesk {
+        display: block;
+    }
+}
+
+.logo2 {
+    padding-top: 0em;
+    padding-right: 3.75em;
+    max-width: 100%;
+    position: relative;
+    left: -22em;
+    bottom: 0.5em;
+    top: -2em;
+
+}
+
+.logo2>img {
+    width: 8em;
+}
+
+/* logo heeft een class omdat die in de ul zit maar anders gepositioneerd moest worden */
 .logo {
-    padding-top:2em;
+    padding-top: 2em;
     padding-right: 3.75em;
     max-width: 100%;
     position: relative;
     left: 1.5em;
-    bottom:0.5em;
+    bottom: 0.5em;
+    top: 0.1em;
 
 }
-
+/* ook alle iconen moesten specifiek gepositioneerd */
 .navicon1 {
     position: absolute;
-    right: 9.063em;
-    top: 1.563em;
+    right: 8.8em;
+    top: 0.8em;
 }
 
 .navicon2 {
     position: absolute;
-    right: 6.25em;
-    top: 1.439em;
+    right: 6.1em;
+    top: 0.7em;
 }
 
 .navicon3 {
     position: absolute;
     right: 3.125em;
-    top: 1em;
+    top: 0.3em;
 }
 
 .navicon4 {
     position: absolute;
-    top: 1.25em;
-    right: 0.625em;
+    top: 0.6em;
+    right: 0.5em;
 }
 
-section:nth-of-type(1)>img{
+.banner1>img {
     max-width: 5%;
     height: 1.5em;
 }
@@ -80,22 +178,77 @@ section:nth-of-type(1)>img{
     display: flex;
     justify-content: space-between;
     background-color: rgb(8, 8, 8);
-    color:white;
+    color: white;
     padding-top: 0.5em;
-    padding-bottom:0.2em;
+    padding-bottom: 0.2em;
 }
 
- p:nth-of-type(1) {
+.banner1>p {
     text-align: center;
 
 }
 
-.tekst1{
-    padding-top:1.2em;
-    padding-bottom:1.2em;
+.bluecollagehome {
+    max-width: 100%;
+    height: auto;
 }
+
+.bluecollagehome>img {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.bluecollagedesk {
+    display: none;
+}
+
+.blue {
+    width: 80em;
+    position: relative;
+    left: 13em;
+}
+
+/* Media query voor weidere schermen dan 768px */
+@media screen and (min-width: 769px) {
+    .bluecollagedesk {
+        display: block;
+        max-width: 100%;
+        height: auto;
+
+    }
+
+    .bluecollagehome {
+        display: none;
+    }
+
+}
+
+.knustack {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding-top: 2em;
+    padding-bottom: 0.625em;
+    position: relative;
+}
+
+.knustack>p:nth-of-type(1) {
+    padding-top: 1.2em;
+    padding-bottom: 2em;
+    padding-left: 1.5em;
+    text-align: center;
+    padding-left: 2.25em;
+    padding-right: 2.25em;
+
+}
+
+.knustack>h3 {
+    text-align: center;
+}
+
 .nushoppen {
-    display:inline;
+    display: flex;
     justify-content: center;
     align-items: center;
     max-width: 100%;
@@ -105,102 +258,143 @@ section:nth-of-type(1)>img{
     background-color: rgb(163, 22, 34);
     color: rgb(255, 255, 255);
     font-weight: 600;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 15px;
-    padding-bottom:15px;
+    padding-right: 0.625em;
+    padding-left: 0.625em;
+    padding-top: 0.9375em;
+    padding-bottom: 0.9375em;
 }
 
- section:nth-of-type(2) {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    height: auto;
-}
-
- p:nth-of-type(2) {
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+/* Media query voor weidere schermen dan 768px */
+@media screen and (min-width: 769px) {
+    .nushoppen {
+        margin-left: 45em;
+        margin-right: 45em;
+    }
 
 }
 
- h3 {
-    text-align: center;
-}
 
-p:nth-of-type(3) {
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
-}
- section:nth-of-type(3) {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding-top: 2em;
-    padding-bottom: 10px;
-    position: relative;
-}
-
-section:nth-of-type(4){
-    padding-top:2em;
-}
-.classics {
-    border-bottom: 2px solid rgb(0, 0, 0);
+.classics2>p:nth-of-type(1) {
+    border-bottom: 0.125em solid rgb(0, 0, 0);
     color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     max-width: 70%;
-    margin-left: 60px;
-    position:relative;
-    top:2em;
+    margin-left: 3.75em;
+    position: relative;
+    top: 2em;
     font-weight: 900;
 }
 
-.yellowbanner{
-    height:10em;
+.classics2>img:nth-of-type(1) {
+    height: 10em;
 }
-.shoeblue {
+
+.classics2>img:nth-of-type(2) {
     position: relative;
-    top: -110px;
-    left: 130px;
-    size:20%;
+    top: -6.875em;
+    left: 8.125em;
+    size: 20%;
     width: 8em;
-
 }
 
-.titel1 {
+.classics2>p:nth-of-type(2) {
     position: relative;
-    top: -100px;
-    left: 20px;
+    top: -6.25em;
+    left: 8em;
     font-weight: 600;
 }
 
-.text1 {
+.classics2>p:nth-of-type(3) {
     position: relative;
-    top: -100px;
-    left: -60px;
+    top: -6.25em;
+    left: -3.75em;
     width: 28em;
     font-size: 0.7em;
 }
 
-section:nth-of-type(5) {
-    color: rgb(15, 10, 2);
+.classics2>p:nth-of-type(3) {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-left: 6.25em;
+    padding-right: 6.25em;
+}
+
+/* Media query voor weidere schermen dan 768px */
+@media screen and (min-width: 769px) {
+
+    .classics2>p:nth-of-type(1) {
+        border-bottom: 0.125em solid rgb(0, 0, 0);
+        color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        margin-left: 59em;
+        margin-right: 2em;
+        ;
+        position: relative;
+        top: 2em;
+        right: 29em;
+        font-weight: 900;
+        font-size: 1.5em;
+        white-space: nowrap;
+
+    }
+
+    .classics2>img:nth-of-type(1) {
+        width: 65em;
+        height: 20em;
+        justify-content: center;
+        display: flex;
+        margin: auto;
+    }
+
+    .classics2>img:nth-of-type(2) {
+        position: relative;
+        top: -12em;
+        left: 45em;
+        size: 20%;
+        width: 15em;
+    }
+
+    .classics2>p:nth-of-type(2) {
+        position: relative;
+        top: -9.25em;
+        left: 40em;
+        font-weight: 600;
+        font-size: 1.2em;
+    }
+
+    .classics2>p:nth-of-type(3) {
+        display: none;
+    }
+
+    .classics2>p:nth-of-type(3) {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding-left: 6.25em;
+        padding-right: 6.25em;
+    }
+
+}
+
+.trendnu {
+    color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
-    padding: 10px;
+    padding: 0.625em;
     margin-top: -5em;
+    display: block;
 }
 
-section:nth-of-type(5)>p:nth-of-type(1){
-text-align: left;
-padding: 0.2em;
-font-weight: 700;
+.trendnu>p:nth-of-type(1) {
+    text-align: left;
+    padding: 0.2em;
+    font-weight: 700;
 }
 
-.roundicons{
+.roundicons {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 20px;
+    grid-gap: 1.25em;
     list-style: none;
     padding: 0;
 }
@@ -209,7 +403,7 @@ font-weight: 700;
     padding: 0.1em;
     box-sizing: border-box;
     font-size: 0.7em;
-    font-weight:600;
+    font-weight: 600;
 }
 
 .roundicons img {
@@ -217,64 +411,218 @@ font-weight: 700;
     height: auto;
 }
 
- @media (max-width: 768px) {
+@media (max-width: 48em) {
     .roundicons {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        /* Adjust column width and number for smaller screens */
+        grid-template-columns: repeat(auto-fill, minmax(6.25em, 1fr));
+        /* resized de ronde afbeeldingen voor kleinere schermen */
     }
 }
 
-section:nth-of-type(6)>img{
-    width:24em;
+/* stijl van de vierkante afbeeldingen voor grote schermen */
+
+.trendsq {
+    display: none;
 }
 
-section:nth-of-type(7)>h2{
+.trendnusquare {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.trendnusquare li {
+    text-align: center;
+    margin: 0 1.25em;
+}
+
+.trendnusquare li img {
+    width: 35em;
+    max-width: 100%;
+    /* Zo dat de afbeelding responsive is */
+    height: auto;
+    /* Houdt ratio juist */
+}
+
+.trendnusquare li p {
+    margin-top: 0.625em;
     font-weight: 600;
-    color:rgb(10, 10, 10);
+    font-size: 1.8em;
+}
+
+/* haalt ronde afbeeldingen weg als het scherm groot is en vervangt met de vierkante */
+@media screen and (min-width: 769px) {
+    .roundicons {
+        display: none;
+    }
+
+    .trendnu>p:nth-of-type(1) {
+        display: none;
+    }
+
+    .trendsq {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+.blackbanner>img {
+    width: 24em;
+}
+
+.totalblack>h2 {
+    font-weight: 600;
+    color: rgb(10, 10, 10);
     text-align: center;
     padding-top: 0.5em;
 }
 
-section:nth-of-type(7)>p:nth-of-type(1){
+.totalblack>p:nth-of-type(1) {
     padding-bottom: 2em;
     padding-top: 1em;
 }
-section:nth-of-type(7)>p:nth-of-type(2){
+
+.totalblack>p:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0.625em;
+    padding-left: 0.625em;
     padding-bottom: 1em;
     padding-top: 1em;
     margin-left: 2em;
     margin-right: 2em;
     background: rgb(163, 22, 34);
-    color:white;
-    font-weight:600;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1em;
 
 }
 
-section:nth-of-type(8) {
+.blackbannerdesk {
+    display: none;
+
+}
+
+.blackbannerdesk>img {
+    width: 75em;
+    max-width: 100%;
+    height: auto;
+
+}
+/* vervangt de banner liggend aan scherm grote */
+@media screen and (min-width: 769px) {
+    .totalblack {
+        display: none;
+    }
+
+    .blackbanner {
+        display: none;
+    }
+
+    .blackbannerdesk {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.category>ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 600;
+    list-style: none;
+    padding: 0em;
+    margin-bottom: 1em;
+}
+
+.category>ul>li {
+    border-style: groove;
+    padding-left: 2em;
+    padding-right: 25em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-style: inset;
+    border-width: 0.1em;
+    display: inline;
+    margin-right: 0.625em;
+    white-space: nowrap;
+
+}
+
+.category2>ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 600;
+    list-style: none;
+    padding: 0em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.category2>ul>li {
+    border-style: groove;
+    padding-left: 2em;
+    padding-right: 25em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-style: inset;
+    border-width: 0.1em;
+    display: inline;
+    margin-right: 0.625em;
+    white-space: nowrap;
+
+}
+
+.category {
     display: flex;
     flex-direction: column;
     width: 10em;
 }
 
-section:nth-of-type(9) {
-    display: flex;
-}
 
 .outlet {
     color: red;
     font-weight: 800;
+    border-color: black;
+}
+/* haalt deze sectie weg op grotere schermen omdat die dan verdwijnt */
+@media screen and (min-width: 769px) {
+    .category {
+        display: none;
+    }
+}
+
+.subtitel {
+    display: flex;
+    text-align: center;
+    margin-left: 9.5em;
+    margin-bottom: 1em;
+    font-size: 0.8em;
+    color: rgb(168, 16, 16);
+    font-weight: 600;
+}
+
+.nieuws {
+    margin-left: 0.8em;
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(12.5em, 1fr));
+    grid-gap: 1.25em;
     list-style: none;
     padding: 0;
 }
 
 .gallery li {
-    padding: 10px;
+    padding: 0.625em;
     box-sizing: border-box;
 }
 
@@ -283,38 +631,612 @@ section:nth-of-type(9) {
     height: auto;
 }
 
- @media (max-width: 768px) {
+@media (max-width: 48em) {
     .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        /* Adjust column width and number for smaller screens */
+        grid-template-columns: repeat(auto-fill, minmax(6.25em, 1fr));
     }
 }
 
- section:nth-of-type(11) {
-    background-color: black;
-    color: antiquewhite;
+@media screen and (min-width: 769px) {
+    .subtitel {
+        margin-top: 1em;
+        margin-left: 60em;
+    }
+
+    .nieuws {
+        margin-left: 43em;
+    }
+
+    .gallery {
+        margin-left: 25em;
+    }
 }
 
- section:nth-of-type(12) {
-    background-color: black;
-    color: antiquewhite;
-    padding: 20px;
+.meerzien {
+    text-align: center;
+    align-items: center;
+    background-color: rgb(3, 0, 0);
+    color: rgb(255, 255, 255);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-right: 10em;
+    margin-left: 10em;
+    margin-bottom: 10em;
+    margin-top: 2em;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+/* verplaatst een beetje voor de grotere schermen */
+@media screen and (min-width: 769px) {
+    .meerzien {
+        text-align: center;
+        align-items: center;
+        background-color: rgb(3, 0, 0);
+        color: rgb(255, 255, 255);
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        margin-right: 48em;
+        margin-left: 48em;
+        margin-bottom: 10em;
+        margin-top: 2em;
+        font-weight: 600;
+        font-size: 1em;
+
+    }
 }
 
 
-.producten li {
-    padding: 10px;
+.favorieten>img {
+    width: 20em;
+}
+
+.favorieten {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2em;
+    border-bottom: 0.1em solid black;
+}
+
+.favorieten>p:nth-of-type(2) {
+    font-weight: 200;
+    color: rgb(87, 88, 88);
+    white-space: nowrap;
+}
+
+.favorieten>p:last-of-type {
+    margin-bottom: 5em;
+}
+
+.laatstehome {
+    text-align: center;
+}
+
+.laatstehome>p:nth-of-type(1) {
+    font-weight: 600;
+    margin-bottom: 1em;
+
+}
+
+.laatstehome>p:nth-of-type(2) {
+    width: 100%;
+    margin-bottom: 1em;
+    text-align: center;
+
+}
+
+.laatstehome>div>button>img {
+    width: 3em;
+}
+
+.laatstehome>div:nth-of-type(2) {
+    font-size: 0.8em;
+    margin-top: 1em;
+}
+
+.email-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 18.75em;
+    margin: 0 auto;
+}
+
+#user-email {
+    flex-grow: 1;
+    padding: 0.625em;
+}
+
+#send-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+}
+/* de knoppen gebruiken ids in plaats van classes */
+#privacy-checkbox {
+    margin-right: 0.625em;
+}
+
+@media screen and (min-width: 769px) {
+    #privacy-checkbox {
+        margin-left: 20em;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .category2>ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-weight: 600;
+        list-style: none;
+        padding: 0em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+    .category2>ul>li {
+        border-style: groove;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        border-style: inset;
+        border-width: 0.1em;
+        display: inline;
+        margin-right: -8m;
+        white-space: nowrap;
+
+    }
+}
+
+.personalisatie {
+    border-bottom: 0.1em solid black;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.personalisatie>h4 {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.begin-button {
+    background-color: black;
+    color: white;
+    padding: 0.625em 1.25em;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.lid {
+    text-align: center;
+}
+
+.lid>h4 {
+    margin-bottom: 1em;
+}
+
+.lid>p:nth-of-type(1) {
+    margin-bottom: 1em;
+}
+
+.inschrijf-button {
+    background-color: rgb(171, 173, 47);
+    color: white;
+    padding: 0.625em 1.25em;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.social-section {
+    text-align: center;
+    margin: 1.25em 0;
+}
+
+.social-icons {
+    margin-top: 0.625em;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 0.625em;
+    text-decoration: none;
+}
+
+.social-icon img {
+    width: 2em;
+    height: 2em;
+    border: none;
+}
+
+.afleveradres>img {
+    width: 1.5em;
+    margin-right: 0.8em;
+}
+
+.afleveradres {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 18.75em;
+    margin: 0 auto;
+    padding: 0.5em;
+    margin-bottom: 2em;
+}
+
+footer>ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 600;
+    list-style: none;
+    padding: 0em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    list-style: none;
+}
+
+footer>ul>li {
+    margin-bottom: 0.625em;
+
+}
+
+a {
+    color: #000000;
+}
+
+.back-to-top {
+    display: inline-block;
+    background-color: #000000;
+    color: #fff;
+    padding: 0.625em 1.25em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* geeft hover animatie aan de terug naar boven knop */
+.back-to-top:hover {
+    background-color: #555;
+}
+
+.naarbovenknop {
+    align-items: center;
+    text-align: center;
+}
+
+
+/*
+extra code pagina dames schoenen
+*/
+
+.damest1 {
+    color: rgb(65, 52, 246);
+    margin-left: 0.5em;
+}
+
+.damestitel {
+    margin-left: 1em;
+    margin-top: 0.8em;
+}
+
+.weergevenart {
+    margin-left: 1em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+
+}
+
+/* Stijl van dropdown menu container */
+.dropdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Stijl van dropdown menu elk element */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 1.25em;
+}
+
+/* Stijl van dropdown button */
+.dropbtn {
+    background-color: #2c2b57;
+    color: white;
+    padding: 0.625em 1.875em;
+    border: none;
+    cursor: pointer;
+}
+
+/* Stijl van de dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 10em;
+    z-index: 1;
+}
+
+/* Stijl van de dropdown links */
+.dropdown-content a {
+    padding: 0.625em;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+/* Link kleuren veranderen met hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Laat drop down menu zien als er overheen hovert */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.shoes {
+    margin-top: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+
+
+/* Stijl van de schoenen of producten container */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width:62.5em;
+    margin: 0 auto;
+}
+
+/* Elk product */
+.product {
+    flex: 0 0 calc(50% - 10px);
     box-sizing: border-box;
+    margin-bottom: 1.25em;
+    padding: 0.625em;
+    border: 0.0625em solid #ddd;
+    text-align: center;
+    position: relative;
+
 }
 
-.producten img {
+/* Product afbeeldingen */
+.product img {
     max-width: 100%;
     height: auto;
 }
 
- @media (max-width: 768px) {
-    .producten {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        /* Adjust column width and number for smaller screens */
+/* Stijl heart icon */
+.favorite {
+    position: absolute;
+    bottom: 4.625em;
+    left: 0.3125em;
+    font-size: 1.25em;
+    color: rgb(117, 8, 8);
+}
+
+/* verplaatst hart voor grotere schermen */
+@media screen and (min-width: 769px) {
+    .favorite {
+        position: absolute;
+        top: 9.5em;
+        left: 2.5em;
+        font-size: 2em;
+        color: rgb(117, 8, 8);
     }
 }
+
+/* maat filter menu voor grote schermen */
+.maat-section {
+    width: 6.25em;
+    margin-right: 1.25em;
+    margin-left: 1em;
+    margin-top: 1em;
+    position: relative;
+    top: 7em;
+    display: none;
+}
+
+.maat-section>h3 {
+    margin-left: 5.5em;
+    margin-bottom: 0.5em;
+}
+
+.size-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.3125em;
+}
+
+.size {
+    width: 1.875em;
+    height: 1.875em;
+    background-color: #ccc;
+    color: rgb(52, 156, 197);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* verandert kleur van de blokjes als je hovert */
+.size:hover {
+    background-color: black;
+    color: rgb(52, 156, 197);
+}
+
+/* laat de linker maat menu zien op grote schermen en haalt dan drop down menus weg */
+@media screen and (min-width: 769px) {
+    .maat-section {
+        display: block;
+    }
+
+    .dropdowns {
+        display: none;
+    }
+}
+
+.maat-soort-section {
+    display: flex;
+    align-items: center;
+    margin-top: 0.625em;
+}
+
+.maat-section {
+    width: 6.25em;
+    margin-right: 1.25em;
+}
+
+
+
+/* product namen */
+.product h2 {
+    font-size: 0.8em;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+
+.product>p:nth-of-type(1) {
+    font-size: 0.7em;
+    text-decoration: underline;
+    color: #555;
+}
+
+.product>p:nth-of-type(2) {
+    margin-top: 0.5em;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+
+.mitems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1em;
+    background-color: black;
+    margin-left: 6.5em;
+}
+
+.mitemsknop {
+    margin-bottom: 3em;
+    margin-top: 2em;
+    display: flex;
+    padding: 0.625em 1.25em;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.mitemsknop:hover {
+    background-color: #540e0e;
+}
+
+.laatstedames {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.laatstedames>p:nth-of-type(1) {
+    font-weight: 600;
+    margin-bottom: 1em;
+
+}
+
+.laatstedames>p:nth-of-type(2) {
+    width: 100%;
+    margin-bottom: 1em;
+    text-align: center;
+
+}
+
+.laatstedames>div>button>img {
+    width: 3em;
+}
+
+.laatstedames>div:nth-of-type(2) {
+    font-size: 0.8em;
+    margin-top: 1em;
+}
+
+.category3>ul {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    list-style: none;
+    padding: 0em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.category3>ul>li {
+    border-style: groove;
+    padding-left: 1em;
+    padding-right: 11em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-style: inset;
+    border-width: 0.1em;
+    display: inline;
+    margin-right: 0.625em;
+    white-space: nowrap;
+
+}
+
+/* verplaatst menu voor grotere schermen meer naar het midden */
+@media screen and (min-width: 769px) {
+
+    .category3>ul{
+        position: relative;
+        left:-13em;
+    }
+    .category3>ul>li {
+        border-style: groove;
+        padding-left: 40em;
+        padding-right: 40em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        border-style: inset;
+        border-width: 0.1em;
+        display: inline;
+        margin-right: 0.625em;
+        white-space: nowrap;
+    
+    }
+}
+
+@media screen and (min-width: 769px) {
+footer{
+position: relative;
+left:-10em;
+}
+}
+
+/* <!-- Maya Coelho 2023 --> */

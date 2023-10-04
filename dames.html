@@ -1,83 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Damespage</title>
-    <link rel="stylesheet" href="" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Damespage</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html" class="logo"><img src="images/vanslogopsmaller.png" alt="red vans logo"> </a></li>
-            <li><a href="index.html" class="navicon1"><img src="images/locationlogo.png" alt="location icon"> </a></li>
-            <li><a href="index.html" class="navicon2"><img src="images/searchlogo.png" alt="search icon"> </a></li>
-            <li><a href="index.html" class="navicon3"><img src="images/cartlogo.png" alt="shopping cart icon"> </a></li>
-            <li></li> <a href="index.html" class="navicon4"><img src="images/burgermenulogo.png" alt="burger menu icon">
-            </a></li>
-        </ul>
-    </nav>
+  <nav class="navhome">
+    <ul>
+      <li><a href="index.html" class="logo"><img src="images/vanslogopsmaller.png" alt="red vans logo"> </a></li>
+      <li><a href="index.html" class="navicon1"><img src="images/locationlogo.png" alt="location icon"> </a></li>
+      <li><a href="index.html" class="navicon2"><img src="images/searchlogo.png" alt="search icon"> </a></li>
+      <li><a href="index.html" class="navicon3"><img src="images/cartlogo.png" alt="shopping cart icon"> </a></li>
+      <li></li> <a href="index.html" class="navicon4"><img src="images/burgermenulogo.png" alt="burger menu icon">
+      </a></li>
+    </ul>
+  </nav>
+
+  <nav class="navhomedesk">
+    <ul>
+      <li><a href="index.html" class="logo2"><img src="images/vanslogopsmaller.png" alt="red vans logo"> </a></li>
+      <li><a href="#">Dames</a> </li>
+      <li><a href="#">Heren</a> </li>
+      <li><a href="#">Kids</a> </li>
+      <li><a href="#">Nieuw binnen</a> </li>
+      <li><a href="#">MTE</a> </li>
+      <li><a href="#">Personaliseren</a> </li>
+      <li><a href="#">Skateboarding</a> </li>
+      <li><a href="#">More</a> </li>
+      <li><a href="#"><img src="images/cartlogo.png" alt="shopping kart logo"> </a></li>
+    </ul>
+    <div class="search-bar">
+      <input type="text" placeholder="Zoeken">
+      <button><img src="images/searchbar.png" alt="Stuur"></button>
+    </div>
+  </nav>
 
 </header>
 
-<body class="damespage">
+<body>
 
-    <section class="banner1">
+  <section class="banner1">
 
-        <img class="arrows" src="images/left.png" alt="left arrow">
-        <p>World lid van Vans Family en ontvang 10% korting op je eerste aankoop</p>
-        <img class="arrows" src="images/right.png" alt="left arrow">
-    </section>
+    <img src="images/arrowleft.png" alt="left arrow">
+    <p>World lid van Vans Family en ontvang 10% korting op je eerste aankoop</p>
+    <img src="images/arrowright.png" alt="left arrow">
+  </section>
 
-    <section>
-        <p> Vans/Dames </p>
-    </section>
-    
-    <section>
-        <h1>DAMES SCHOENEN</h1>
-    </section>
+  <section class="damest1">
+    <p> Vans/Dames </p>
+  </section>
 
-    <section>
-        <p> Weergeven:764 Artikelen</p>
-    </section>
+  <section class="damestitel">
+    <h1>DAMES SCHOENEN</h1>
+  </section>
 
-    <section>
-        <p>FILTERS</p>
-        <P>VOLGORDE Relevantie</P>
-    </section>
+  <section class="weergevenart">
+    <p> Weergeven:764 Artikelen</p>
+  </section>
 
-    <section>
-        <ul class="producten">
-            <li>
-                <img src="images/gallery1.webp" alt="Image 1 gallery">
-                <p>Skateboarding<br>
-                    VANS X HOCKEY <br>
-                    MEER LEZEN
-                </p>
-            </li>
-            <li>
-                <img src="images/gallery2.webp" alt="Image 2 gallery">
-                <p>Vault <br>
-                    VAULT BY VANS X GOODFIGHT <br>
-                    MEER LEZEN</p>
-            </li>
-            <li>
-                <img src="images/gallery3.webp" alt="Image 3 gallery">
-                <p>surf <br>
-                    VANS X WASTED TALENT <br>
-                    MEER LEZEN
-                </p>
-            </li>
-            <li>
-                <img src="images/gallery4.webp" alt="Image 3 gallery">
-                <p>BMX <br>
-                    EEN BMX-COLLECTIE VAN PERRIS BENEGAS EN DENNIS ENARSON <br>
-                    MEER LEZEN
-                </p>
-            </li>
-        </ul>
-    </section>
+  <section class="dropdowns">
+    <div class="dropdown-container">
+      <div class="dropdown">
+        <button class="dropbtn">FILTERS</button>
+        <div class="dropdown-content">
+          <a href="#">Maat</a>
+          <a href="#">Soort</a>
+          <a href="#">Kleur</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Volgorde</button>
+        <div class="dropdown-content">
+          <a href="#">Relevantie</a>
+          <a href="#">Laagste prijs</a>
+          <a href="#">Hoogste prijs</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+<!-- maaten filter die alleen op grote schermen tevoorschijn komt -->
+  <section class="maat-section">
+    <h3>Maat</h3>
+    <div class="size-grid">
+
+      <div class="size">32</div>
+      <div class="size">33</div>
+      <div class="size">34</div>
+      <div class="size">35</div>
+      <div class="size">36</div>
+      <div class="size">37</div>
+      <div class="size">38</div>
+      <div class="size">39</div>
+      <div class="size">40</div>
+      <div class="size">41</div>
+      <div class="size">42</div>
+
+    </div>
+  </section>
+
+
+<!-- producten met namen, fotos en prijs -->
+  <section class="shoes">
+<!-- eerste hartje maakt geluid als je er op klikt -->
+    <div class="product-list">
+      <div class="product">
+        <div class="product-image">
+          <span class="favorite" onclick="playSound()">&#10084;</span>
+          <img src="images/s1.webp" alt="Product 1">
+        </div>
+        <h2>Knu Skool Schoenen</h2>
+        <p>meer kleuren</p>
+        <p>€100.00</p>
+      </div>
+
+      <div class="product">
+        <div class="product-image">
+          <span class="favorite">&#10084;</span>
+          <img src="images/s2.webp" alt="Product 2">
+        </div>
+        <h2>Knu Skool Schoenen</h2>
+        <p>meer kleuren</p>
+        <p>€90.00</p>
+      </div>
+
+      <div class="product-list">
+        <div class="product">
+          <div class="product-image">
+            <span class="favorite">&#10084;</span>
+            <img src="images/s3.webp" alt="Product 1">
+          </div>
+          <h2>Knu Skool Schoenen</h2>
+          <p>meer kleuren</p>
+          <p>€110.00</p>
+        </div>
+
+        <div class="product">
+          <div class="product-image">
+            <span class="favorite">&#10084;</span>
+            <img src="images/s4.webp" alt="Product 2">
+          </div>
+          <h2>Knu Skool Schoenen</h2>
+          <p>meer kleuren</p>
+          <p>€100.00</p>
+        </div>
+
+        <div class="product-list">
+          <div class="product">
+            <div class="product-image">
+              <span class="favorite">&#10084;</span>
+              <img src="images/s5.jpg" alt="Product 1">
+            </div>
+            <h2>Knu Skool Schoenen</h2>
+            <p>meer kleuren</p>
+            <p>€110.00</p>
+          </div>
+
+          <div class="product">
+            <div class="product-image">
+              <span class="favorite">&#10084;</span>
+              <img src="images/s6.jpg" alt="Product 2">
+            </div>
+            <h2>Knu Skool Schoenen</h2>
+            <p>meer kleuren</p>
+            <p>€110.00</p>
+          </div>
+
+          <div class="product-list">
+            <div class="product">
+              <div class="product-image">
+                <span class="favorite">&#10084;</span>
+                <img src="images/s7.jpg" alt="Product 1">
+              </div>
+              <h2>Knu Skool Schoenen</h2>
+              <p>meer kleuren</p>
+              <p>€90.00</p>
+            </div>
+
+            <div class="product">
+              <div class="product-image">
+                <span class="favorite">&#10084;</span>
+                <img src="images/s8.jpg" alt="Product 2">
+              </div>
+              <h2>Knu Skool Schoenen</h2>
+              <p>meer kleuren</p>
+              <p>€90.00</p>
+            </div>
+
+            <div class="product-list">
+              <div class="product">
+                <div class="product-image">
+                  <span class="favorite">&#10084;</span>
+                  <img src="images/s9.jpg" alt="Product 1">
+                </div>
+                <h2>Knu Skool Schoenen</h2>
+                <p>meer kleuren</p>
+                <p>€100.00</p>
+              </div>
+
+              <div class="product">
+                <div class="product-image">
+                  <span class="favorite">&#10084;</span>
+                  <img src="images/s10.jpg" alt="Product 2">
+                </div>
+                <h2>Knu Skool Schoenen</h2>
+                <p>meer kleuren</p>
+                <p>€110.00</p>
+              </div>
+
+              <div class="product-list">
+                <div class="product">
+                  <div class="product-image">
+                    <span class="favorite">&#10084;</span>
+                    <img src="images/s11.jpg" alt="Product 1">
+                  </div>
+                  <h2>Knu Skool Schoenen</h2>
+                  <p>meer kleuren</p>
+                  <p>€110.00</p>
+                </div>
+
+                <div class="product">
+                  <div class="product-image">
+                    <span class="favorite">&#10084;</span>
+                    <img src="images/s12.jpg" alt="Product 2">
+                  </div>
+                  <h2>Knu Skool Schoenen</h2>
+                  <p>meer kleuren</p>
+                  <p>€110.00</p>
+                </div>
+
+                <div class="product-list">
+                  <div class="product">
+                    <div class="product-image">
+                      <span class="favorite">&#10084;</span>
+                      <img src="images/s13.jpg" alt="Product 1">
+                    </div>
+                    <h2>Sk8-Hi Tapered Stackform Schoenen</h2>
+                    <p>meer kleuren</p>
+                    <p>€120.00</p>
+                  </div>
+
+                  <div class="product">
+                    <div class="product-image">
+                      <span class="favorite">&#10084;</span>
+                      <img src="images/s14.jpg" alt="Product 2">
+                    </div>
+                    <h2>Suède Sk8-Hi MTE-1 Schoenen</h2>
+                    <p>meer kleuren</p>
+                    <p>€110.00</p>
+                  </div>
+
+                  <div class="product-list">
+                    <div class="product">
+                      <div class="product-image">
+                        <span class="favorite">&#10084;</span>
+                        <img src="images/s15.jpg" alt="Product 1">
+                      </div>
+                      <h2>Sk8-Hi Platform 2.0 Schoenen</h2>
+                      <p>meer kleuren</p>
+                      <p>€105.00</p>
+                    </div>
+
+                    <div class="product">
+                      <div class="product-image">
+                        <span class="favorite">&#10084;</span>
+                        <img src="images/s16.jpg" alt="Product 2">
+                      </div>
+                      <h2>Checkerboard Old Skool Platform</h2>
+                      <p>meer kleuren</p>
+                      <p>€95.00</p>
+                    </div>
+
+                    <div class="product">
+                      <div class="product-image">
+                        <span class="favorite">&#10084;</span>
+                        <img src="images/s17.jpg" alt="Product 2">
+                      </div>
+                      <h2>Sk8-Hi MTE-2 Schoenen</h2>
+                      <p>meer kleuren</p>
+                      <p>€150.00</p>
+                    </div>
+
+                    <div class="product">
+                      <div class="product-image">
+                        <span class="favorite">&#10084;</span>
+                        <img src="images/s18.jpg" alt="Product 2">
+                      </div>
+                      <h2>Sk8-Hi Tapered Stackform Schoenen</h2>
+                      <p>meer kleuren</p>
+                      <p>€105.00</p>
+                    </div>
+
+                    <div class="product">
+                      <div class="product-image">
+                        <span class="favorite">&#10084;</span>
+                        <img src="images/s19.jpg" alt="Product 2">
+                      </div>
+                      <h2>Suède Sk8-Hi Stacked Schoenen</h2>
+                      <p>meer kleuren</p>
+                      <p>€110.00</p>
+                    </div>
+
+                    <div class="product">
+                      <div class="product-image">
+                        <span class="favorite">&#10084;</span>
+                        <img src="images/s20.jpg" alt="Product 2">
+                      </div>
+                      <h2>Old Skool Stackform Schoenen</h2>
+                      <p>meer kleuren</p>
+                      <p>€95.00</p>
+                    </div>
+                  </div>
+
+                  <section>
+                    <div class="mitems">
+                      <a href="#" class="mitemsknop">Meer items laden</a>
+                    </div>
+
+                  </section>
+
+                  <section class="laatstedames">
+                    <p>ALS EERSTE BINNEN, ALS BESTE GEKLEED</p>
+                    <P>Meld je aan om als eerste op de hoogte te zijn van exclusieve promoties, nieuwe producten en
+                      unieke
+                      samenwerkingen</P>
+                    <div class="email-input">
+                      <input type="email" id="user-email" placeholder="Emailadres">
+                      <button id="send-button">
+                        <img src="images/arrow-iconred.png" alt="Stuur">
+                      </button>
+                    </div>
+                    <div class="form-group">
+                      <label for="privacy-checkbox">
+                        <input type="checkbox" id="privacy-checkbox">
+                        Ik bevestig dat ik het privacybeleid van Vans heb gelezen en begrepen en ga akkoord met het
+                        verwerken
+                        van mijn persoonsgegevens voor commerciële en profileringsdoeleinden
+                      </label>
+                    </div>
+                  </section>
+                  <section class="category3">
+                    <ul>
+                      <li>WINKELEN</li>
+                      <li>SPORT</li>
+                      <li>MERK</li>
+                      <li>BESTELLINGEN</li>
+                      <li>CUSTOMER CARE</li>
+                      <li>VINDT EEN WINKEL</li>
+                    </ul>
+                    <footer>
+                      <ul>
+                        <li><a href="#">Duurzaam en verantwoordelijk</a></li>
+                        <li><a href="#">Modern Slavery Statement</a></li>
+                        <li><a href="#">Betalingsinformatie</a></li>
+                        <li><a href="#">Privacyverklaring</a></li>
+                        <li><a href="#">Gebruikersvoorwaarden website</a></li>
+                        <li><a href="#">Verkoopvoorwaarden</a></li>
+                        <li><a href="#">Conformiteitsverklaring</a></li>
+                        <li><a href="#">Cookievoorkeuren</a></li>
+                      </ul>
+                    </footer>
+                    <section class="naarbovenknop">
+                      <a href="#top" class="back-to-top">Terug naar boven</a>
+                    </section>
+                    <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
+
+<!-- Maya Coelho 2023 -->

@@ -9,8 +9,8 @@
 </head>
 
 <header>
-
-    <nav>
+<!-- de navigatie van allebij de pages -->
+    <nav class="navhome">
         <ul>
             <li><a href="index.html" class="logo"><img src="images/vanslogopsmaller.png" alt="red vans logo"> </a></li>
             <li><a href="index.html" class="navicon1"><img src="images/locationlogo.png" alt="location icon"> </a></li>
@@ -20,43 +20,66 @@
             </a></li>
         </ul>
     </nav>
+<!-- de navigatie voor grotere schermen, helemaal andere layout en look -->
+    <nav class="navhomedesk">
+        <ul>
+            <li><a href="index.html" class="logo2"><img src="images/vanslogopsmaller.png" alt="red vans logo"> </a></li>
+            <li><a href="#">Dames</a> </li>
+            <li><a href="#">Heren</a> </li>
+            <li><a href="#">Kids</a> </li>
+            <li><a href="#">Nieuw binnen</a> </li>
+            <li><a href="#">MTE</a> </li>
+            <li><a href="#">Personaliseren</a> </li>
+            <li><a href="#">Skateboarding</a> </li>
+            <li><a href="#">More</a> </li>
+            <li><a href="#"><img src="images/cartlogo.png" alt="shopping kart logo"> </a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Zoeken">
+            <button><img src="images/searchbar.png" alt="Stuur"></button>
+        </div>
+    </nav>
 
 </header>
 
-<body class=>
+<body>
+    <!-- het zwarte balkje met info -->
     <section class="banner1">
 
         <img class="arrows" src="images/arrowleft.png" alt="left arrow">
         <p>Gratis retourneren</p>
         <img class="arrows" src="images/arrowright.png" alt="left arrow">
     </section>
-
-    <section>
+<!-- de blauwe collage afbeelding -->
+    <section class="bluecollagehome">
         <img src="images/homebluecollage4.png" alt="vans blue collage">
+    </section>
+<!-- de blauwe collage afbeelding voor grotere schermen -->
+    <section class="bluecollagedesk">
+        <img class="blue" src="images/bluecollagedesk-01.png" alt="vans blue collage">
     </section>
 
 
-    <section>
+    <section class="knustack">
         <h3>THE KNU STACK</h3>
         <p class="tekst1">De kenmerkende details van de iconische Old School naar een hoger niveau getild.</p>
         <p class="nushoppen">
             NU SHOPPEN
         </p>
-
     </section>
-
-    <section>
-        <p class="classics">
+<!-- Een banner met allemaal losse elementen op elkaar om een geheel te maken -->
+    <section class="classics2">
+        <p>
             THE CLASSICS
         </p>
-        <img class="yellowbanner" src="images/yellowbannermob.jpg" alt="yellow banner">
-        <img class="shoeblue" src="images/oldskoolblue2.png" alt="blue old school shoe">
-        <p class="titel1">THE OLD SKOOL</p>
-        <P class="text1">Het eerste model met de inmiddels iconische Vans Sidestripe</P>
+        <img src="images/yellowbannermob.jpg" alt="yellow banner">
+        <img src="images/oldskoolblue2.png" alt="blue old school shoe">
+        <p>THE OLD SKOOL</p>
+        <p>Het eerste model met de inmiddels iconische Vans Sidestripe</p>
     </section>
 
-
-    <section>
+<!-- Afbeeldingen in rode versie voor kleine apparaten -->
+    <section class="trendnu">
         <p>TREND VAN NU</p>
         <ul class="roundicons">
             <li>
@@ -74,26 +97,48 @@
                 </p>
             </li>
         </ul>
+<!-- Afbeeldingen in vierkante versie voor grotere schermen -->
+        <section class="trendsq">
+            <ul class="trendnusquare">
+                <li>
+                    <img src="images/purpleround1.webp" alt="Image 1 gallery">
+                    <p>DE SPORT LOW<br>
+                    </p>
+                </li>
+                <li>
+                    <img src="images/bagsround2.webp" alt="Image 2 gallery">
+                    <p>TERUG NAAR SKOOL</p>
+                </li>
+
+            </ul>
+
+        </section>
 
     </section>
-
-    <section>
+<!-- banner voor kleine schermen -->
+    <section class="blackbanner">
         <img src="images/customsbannermobb.png" alt="custom vans banner">
     </section>
 
-    <section>
+    <section class="totalblack">
         <h2>TOTAL BLACK</h2>
         <p>Begin met een zwart ondergrond en kies je eigen favoriete ontwerp in Total Black</p>
-        <p class="nushoppen2">NU SHOPPEN</p>
+        <p>NU SHOPPEN</p>
     </section>
+<!-- banner voor grotere schermen, haalt dan andere weg -->
+    <section class="blackbannerdesk">
+        <img src="images/blackbannerdesk.png" alt="custom vans banner">
 
-    <section>
+
+    </section>
+<!-- menu met links -->
+    <section class="category">
         <ul>
             <li>DAMES</li>
             <li>HEREN</li>
             <li>KIDS</li>
             <li>NIEUW BINNEN</li>
-            <li>TASSEN & RUGZAKKEN</li>
+            <li>KNU SKOOL</li>
             <li>COLLABORATIONS</li>
             <li>CUSTOMISE</li>
             <li>SKATEBOARDING</li>
@@ -102,11 +147,14 @@
         </ul>
     </section>
 
-    <section>
-        <h4>BLIJF OP DE HOOGTE</h4>
-        <h3>HET LAATSTE VANS NIEUWS</h3>
+    <section class="subtitel">
+        <p>BLIJF OP DE HOOGTE</p>
     </section>
 
+    <section class="nieuws">
+        <h2>HET LAATSTE VANS NIEUWS</h2>
+    </section>
+<!-- gallerij met afbeeldingen -->
     <section>
         <ul class="gallery">
             <li>
@@ -140,83 +188,105 @@
 
     </section>
 
-    <section>
-        <p>MEER LEZEN</p>
+    <section class="meerzien">
+        <p>MEER ZIEN</p>
     </section>
-
-    <section>
+<!-- Nog een element met meerdere onderdelen -->
+    <section class="favorieten">
         <p>ONZE FAVORIETEN</p>
         <img src="images/favskinderen.webp" alt="zwarte kinder schoenen">
         <p>KNU SKOOL SCHOENEN</p>
         <p>$90.00</p>
     </section>
-
-    <section>
+<!-- Email invoer balk om de nieuwsbrief te krijgen en Pivacy Policy aanvink knop -->
+    <section class="laatstehome">
         <p>ALS EERSTE BINNEN, ALS BESTE GEKLEED</p>
         <P>Meld je aan om als eerste op de hoogte te zijn van exclusieve promoties, nieuwe producten en unieke
             samenwerkingen</P>
-        <p>E-mail adres</p>
-        <!--hier hoort een button in het rood-->
-        <p>Ik bevestig dat ik het privacybeleid van Vans heb gelezen en begrepen en ga akkoord met het verwerken van
-            mijn persoonsgegevens voor commerciele en profileringsdoeleinden</p>
+        <div class="email-input">
+            <input type="email" id="user-email" placeholder="Emailadres">
+            <button id="send-button">
+                <img src="images/arrow-iconred.png" alt="Stuur">
+            </button>
+        </div>
+        <div class="form-group">
+            <label for="privacy-checkbox">
+                <input type="checkbox" id="privacy-checkbox">
+                Ik bevestig dat ik het privacybeleid van Vans heb gelezen en begrepen en ga akkoord met het verwerken
+                van mijn persoonsgegevens voor commerciële en profileringsdoeleinden
+            </label>
+        </div>
     </section>
-    <!--<section>
-    <ul>
-        <li><a href="index.html"> winkelen </a></li>
-        <li><a href="index.html">sport</a></li>
-        <li><a href="index.html">merk</a></li>
-        <li><a href="index.html">bestellingen</a></li>
-        <li><a href="index.html">customer care</a></li>
-        <li><a href="index.html">vind een winkel</a></li>
-    </ul>
-</section>-->
-    <section>
+<!-- Nog een menu met links -->
+    <section class="category2">
+        <ul>
+            <li>WINKELEN</li>
+            <li>SPORT</li>
+            <li>MERK</li>
+            <li>BESTELLINGEN</li>
+            <li>CUSTOMER CARE</li>
+            <li>VINDT EEN WINKEL</li>
+        </ul>
+    </section>
+    <section class="personalisatie">
         <h4>PERSONALISEREN</h4>
         <p>Kies je favoriete stijl en gebruik onze personalisatie optie om je schoenen uniek te maken</p>
-        <p>beginnen</p> <!--button-->
+        <div class="center-container">
+            <button type="button" class="begin-button">Beginnen</button>
+
+        </div>
 
     </section>
-
-    <section>
+<!-- Nog een inschrijf knop -->
+    <section class="lid">
         <h4>WORD LID VAN VANS FAMILY</h4>
         <p>Word lid van Vans Family en ontvang 10% korting op je eerste aankoop en talrijke voordelen voor Family-leden
         </p>
-        <p>SCHRIJF JE NU IN</p> <!--button-->
+        <button type="button" class="inschrijf-button">Schrijf je nu in</button>
     </section>
-
-    <section>
-        <h4>FOLLOW US</h4>
-        <img src="images/twittericon.png" alt="twitter icon">
-        <img src="images/facebookicon.png" alt="facebook icon">
-        <img src="images/instagramicon.png" alt="instagram icon">
-        <img src="images/youtubeicon.png" alt="youtube icon">
+<!-- Social media iconen met werkende links -->
+    <section class="social-section">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/VANS/" class="social-icon"><img src="images/facebookicon.png"
+                    alt="Facebook"></a>
+            <a href="https://twitter.com/vans_europe?lang=en" class="social-icon"><img src="images/twittericon.png"
+                    alt="Twitter"></a>
+            <a href="https://www.instagram.com/vans_europe/" class="social-icon"><img src="images/instagramicon.png"
+                    alt="Instagram"></a>
+            <a href="https://www.youtube.com/channel/UCnJ0mt5Cgx4ER_LhTijG_4A" class="social-icon"><img
+                    src="images/youtubeicon.png" alt="Youtube"></a>
+        </div>
     </section>
-
+<!-- Knop met img en p, hier had ik een error in de checker maar dit kon echt niet anders -->
     <section>
-        <p>afleveradres wijzigen</p>
+        <div>
+            <button class="afleveradres">
+                <img src="images/wereld.png" alt="wereldbol">
+                <p>Afleveradres wijzigen</p>
+            </button>
+        </div>
+    </section>
+<!-- footer met menu met links -->
+    <footer>
         <ul>
-            <li><a>Duurzaam enverantwoordelijk</a></li>
-            <li><a>Modern Slavery Statement</a></li>
-            <li><a>Betalingsinformatie</a></li>
-            <li><a>Privacyverklaring</a></li>
-            <li><a>Gebruikersvoorwaarden website</a></li>
-            <li><a>Verkoopvoorwaarden</a></li>
-            <li><a>Conformiteitsverklaring</a></li>
-            <li><a>Cookievoorkeuren</a></li>
+            <li><a href="#">Duurzaam en verantwoordelijk</a></li>
+            <li><a href="#">Modern Slavery Statement</a></li>
+            <li><a href="#">Betalingsinformatie</a></li>
+            <li><a href="#">Privacyverklaring</a></li>
+            <li><a href="#">Gebruikersvoorwaarden website</a></li>
+            <li><a href="#">Verkoopvoorwaarden</a></li>
+            <li><a href="#">Conformiteitsverklaring</a></li>
+            <li><a href="#">Cookievoorkeuren</a></li>
         </ul>
-    </section>
-
-    <section>
-        <h3>TERUG NAAR BOVEN</h3> <!--button links to start of page-->
+    </footer>
+<!-- Knop om terug naar boven te scrollen, gaat vanzelf en is ingesteld op smooth -->
+    <section class="naarbovenknop">
+        <a href="#top" class="back-to-top">Terug naar boven</a>
     </section>
 </body>
 
-<!--<footer>
-    <nav>
-        <ul>
-            <li></li>
-        </ul>
-    </nav>
-</footer> -->
 
 </html>
+
+<!-- Maya Coelho 2023 -->
