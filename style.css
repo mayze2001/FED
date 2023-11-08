@@ -14,8 +14,11 @@ body {
 .navhome {
     display: block;
     background-color: rgb(255, 255, 255);
-    position: relative;
-
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index:999;
 }
 
 .navhome>ul {
@@ -43,7 +46,36 @@ body {
 /* verbergt de navigatie voor grotere schermen tot aangeroepen in media */
 .navhomedesk {
     display: none;
-    position: relative;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.navhome>ul {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 0em;
+
+}
+
+.navhome>ul>li {
+    margin-right: 2.1875em;
+    padding-right: 0.21875em;
+    padding-top: 0.0625em;
+    border-right: 0.1em solid #242323;
+}
+/* geeft de iconen lijnen of randen tussen elkaar net zoals de echte site, beweegt raar niet mee */
+.navhome>ul>li:last-child {
+    border-right: none;
+}
+
+.navhome>ul>li:first-child {
+    border-right: none;
+}
+/* verbergt de navigatie voor grotere schermen tot aangeroepen in media */
+.navhomedesk {
+    display: none;
+    position:relative;
 }
 
 .navhomedesk>ul {
@@ -73,6 +105,41 @@ body {
     left: 15em;
     top: 2em;
 }
+
+
+.navhomedesk>ul {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 33em;
+}
+
+.navhomedesk>ul>li {
+    margin-left: 1em;
+    padding-right: 0em;
+    padding-top: 0em;
+    padding-left: 0em;
+    padding-right: 0em;
+    white-space: nowrap;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    top: 3em;
+}
+
+.navhomedesk>ul>li:last-of-type {
+    position: relative;
+    left: 15em;
+    top: 2em;
+}
+
+.navhometab {
+    display: none;
+    position:relative;
+}
+
 
 /* Stijl voor de  search bar container */
 .search-bar {
@@ -115,6 +182,140 @@ body {
 
     .navhomedesk {
         display: block;
+        overflow: hidden;
+    position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index:999
+    }
+/*banner heeft margin top nodig op desk formaat om niet te verdwijnen onder de fixed nav */
+    .banner1 {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(8, 8, 8);
+        color: white;
+        margin-top: 3em;
+        padding-top: 3em;
+        padding-bottom: 0.2em;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    /* Your styles for screens in this middle point */
+    .navhome{
+        display:none;
+    }
+    .navhomedesk{
+        display:none;
+    }
+    .navhometab{
+        display:block;
+        overflow: hidden;
+    position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index:999
+    }
+    .navhometab>ul {
+        display: flex;
+        text-decoration: none;
+        list-style-type: none;
+        margin-top: 0em;
+        margin-bottom: 0em;
+        margin-left: 0em;
+        
+    }
+    
+    .navhometab>ul>li {
+        margin-left: 3em;
+        padding-right: 0em;
+        padding-top: 0em;
+        padding-left: 0em;
+        padding-right: 0em;
+        white-space: nowrap;
+        font-weight: 600;
+        text-decoration: none;
+        position: relative;
+        top: 3em;
+    }
+    
+    .navhometab>ul>li:last-of-type {
+        position: relative;
+        left: 10em;
+        top: 2em;
+    }
+    
+    
+    .navhometab>ul {
+        display: flex;
+        text-decoration: none;
+        list-style-type: none;
+        margin-top: 0em;
+        margin-bottom: 0em;
+        margin-left: 9em;
+    }
+    
+    .navhometab>ul>li {
+        margin-left: 1em;
+        padding-right: 0em;
+        padding-top: 0em;
+        padding-left: 0em;
+        padding-right: 0em;
+        white-space: nowrap;
+        font-weight: 600;
+        text-decoration: none;
+        position: relative;
+        top: 3em;
+        right:10em;
+    }
+    
+    .navhometab>ul>li:first-of-type {
+        position: relative;
+        left:13em;
+        top: 3em;
+    }
+    .navhometab>ul>li:last-of-type {
+        position: relative;
+        left:2em;
+        top: 2em;
+    }
+
+    /* Stijl voor de  search bar container */
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 52em;
+    top: -1em;
+}
+
+/* stijl voor de search bar input field */
+.search-bar input[type="text"] {
+    padding: 0.3125em;
+    border: none;
+    border-bottom: 0.0625em solid #0c0c0c;
+    margin-right: 0.3125em;
+
+}
+
+.search-bar-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* zoekknop image stijl */
+.search-bar button>img {
+    width: 1.8em;
+}
+    .banner1 {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(8, 8, 8);
+        color: white;
+        margin-top: 5em;
+        padding-top: 1em;
+        padding-bottom: 0.2em;
     }
 }
 
@@ -179,7 +380,7 @@ body {
     justify-content: space-between;
     background-color: rgb(8, 8, 8);
     color: white;
-    padding-top: 0.5em;
+    padding-top: 3em;
     padding-bottom: 0.2em;
 }
 
@@ -1034,6 +1235,17 @@ extra code pagina dames schoenen
     left: 0.3125em;
     font-size: 1.25em;
     color: rgb(117, 8, 8);
+    cursor:pointer;
+}
+/* Stijl favorieten bericht, kleinere font voor kleinere schermen */
+.message {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1em;
+    border-radius: 0.5em;
+    font-size: 1em;
+    z-index: 9999;
 }
 
 /* verplaatst hart voor grotere schermen */
@@ -1044,8 +1256,19 @@ extra code pagina dames schoenen
         left: 2.5em;
         font-size: 2em;
         color: rgb(117, 8, 8);
+        cursor:pointer;
     }
+   .message {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1em;
+    border-radius: 0.5em;
+    font-size: 1.6em;
+    z-index: 9999;
 }
+}
+
 
 /* maat filter menu voor grote schermen */
 .maat-section {
@@ -1092,6 +1315,8 @@ extra code pagina dames schoenen
 @media screen and (min-width: 769px) {
     .maat-section {
         display: block;
+        margin-top:8em ;
+        position: fixed;
     }
 
     .dropdowns {
@@ -1208,6 +1433,19 @@ extra code pagina dames schoenen
     margin-right: 0.625em;
     white-space: nowrap;
 
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .dropdowns {
+        display: block;
+    }
+    
+
+    .maat-section {
+        display: none;
+    }
+
+    /* Your other middle-point specific styles here */
 }
 
 /* verplaatst menu voor grotere schermen meer naar het midden */

@@ -40,6 +40,25 @@
     </div>
   </nav>
 
+  <nav class="navhometab">
+    <ul>
+        <li><a href="index.html" class="logo2"><img src="images/vanslogopsmaller.png" alt="red vans logo"> </a></li>
+        <li><a href="#">Dames</a> </li>
+        <li><a href="#">Heren</a> </li>
+        <li><a href="#">Kids</a> </li>
+        <li><a href="#">Nieuw binnen</a> </li>
+        <li><a href="#">MTE</a> </li>
+        <li><a href="#">Personaliseren</a> </li>
+        <li><a href="#">Skateboarding</a> </li>
+        <li><a href="#">More</a> </li>
+        <li><a href="#"><img src="images/cartlogo.png" alt="shopping kart logo"> </a></li>
+    </ul>
+    <div class="search-bar">
+        <input type="text" placeholder="Zoeken">
+        <button><img src="images/searchbar.png" alt="Stuur"></button>
+    </div>
+</nav>
+
 </header>
 
 <body>
@@ -108,11 +127,11 @@
 
 <!-- producten met namen, fotos en prijs -->
   <section class="shoes">
-<!-- eerste hartje maakt geluid als je er op klikt -->
+
     <div class="product-list">
       <div class="product">
         <div class="product-image">
-          <span class="favorite" onclick="playSound()">&#10084;</span>
+          <span class="favorite" onclick="addToFavorites(this)">&#10084;</span>
           <img src="images/s1.webp" alt="Product 1">
         </div>
         <h2>Knu Skool Schoenen</h2>
@@ -122,7 +141,7 @@
 
       <div class="product">
         <div class="product-image">
-          <span class="favorite">&#10084;</span>
+          <span class="favorite" onclick="addToFavorites(this)">&#10084;</span>
           <img src="images/s2.webp" alt="Product 2">
         </div>
         <h2>Knu Skool Schoenen</h2>
@@ -133,7 +152,7 @@
       <div class="product-list">
         <div class="product">
           <div class="product-image">
-            <span class="favorite">&#10084;</span>
+            <span class="favorite"onclick="addToFavorites(this)">&#10084;</span>
             <img src="images/s3.webp" alt="Product 1">
           </div>
           <h2>Knu Skool Schoenen</h2>
@@ -143,7 +162,7 @@
 
         <div class="product">
           <div class="product-image">
-            <span class="favorite">&#10084;</span>
+            <span class="favorite"onclick="addToFavorites(this)">&#10084;</span>
             <img src="images/s4.webp" alt="Product 2">
           </div>
           <h2>Knu Skool Schoenen</h2>
@@ -154,7 +173,7 @@
         <div class="product-list">
           <div class="product">
             <div class="product-image">
-              <span class="favorite">&#10084;</span>
+              <span class="favorite"onclick="addToFavorites(this)">&#10084;</span>
               <img src="images/s5.jpg" alt="Product 1">
             </div>
             <h2>Knu Skool Schoenen</h2>
@@ -164,7 +183,7 @@
 
           <div class="product">
             <div class="product-image">
-              <span class="favorite">&#10084;</span>
+              <span class="favorite"onclick="addToFavorites(this)">&#10084;</span>
               <img src="images/s6.jpg" alt="Product 2">
             </div>
             <h2>Knu Skool Schoenen</h2>
@@ -175,7 +194,7 @@
           <div class="product-list">
             <div class="product">
               <div class="product-image">
-                <span class="favorite">&#10084;</span>
+                <span class="favorite"onclick="addToFavorites(this)">&#10084;</span>
                 <img src="images/s7.jpg" alt="Product 1">
               </div>
               <h2>Knu Skool Schoenen</h2>
@@ -185,7 +204,7 @@
 
             <div class="product">
               <div class="product-image">
-                <span class="favorite">&#10084;</span>
+                <span class="favorite"onclick="addToFavorites(this)">&#10084;</span>
                 <img src="images/s8.jpg" alt="Product 2">
               </div>
               <h2>Knu Skool Schoenen</h2>
@@ -196,7 +215,7 @@
             <div class="product-list">
               <div class="product">
                 <div class="product-image">
-                  <span class="favorite">&#10084;</span>
+                  <span class="favorite"onclick="addToFavorites(this)">&#10084;</span>
                   <img src="images/s9.jpg" alt="Product 1">
                 </div>
                 <h2>Knu Skool Schoenen</h2>
@@ -206,7 +225,7 @@
 
               <div class="product">
                 <div class="product-image">
-                  <span class="favorite">&#10084;</span>
+                  <span class="favorite"onclick="addToFavorites(this)">&#10084;</span>
                   <img src="images/s10.jpg" alt="Product 2">
                 </div>
                 <h2>Knu Skool Schoenen</h2>
@@ -217,7 +236,7 @@
               <div class="product-list">
                 <div class="product">
                   <div class="product-image">
-                    <span class="favorite">&#10084;</span>
+                    <span class="favorite"onclick="addToFavorites(this)">&#10084;</span>
                     <img src="images/s11.jpg" alt="Product 1">
                   </div>
                   <h2>Knu Skool Schoenen</h2>
@@ -227,7 +246,7 @@
 
                 <div class="product">
                   <div class="product-image">
-                    <span class="favorite">&#10084;</span>
+                    <span class="favorite"onclick="addToFavorites(this)">&#10084;</span>
                     <img src="images/s12.jpg" alt="Product 2">
                   </div>
                   <h2>Knu Skool Schoenen</h2>
@@ -238,7 +257,7 @@
                 <div class="product-list">
                   <div class="product">
                     <div class="product-image">
-                      <span class="favorite">&#10084;</span>
+                      <span class="favorite"onclick="addToFavorites(this)">&#10084;</span>
                       <img src="images/s13.jpg" alt="Product 1">
                     </div>
                     <h2>Sk8-Hi Tapered Stackform Schoenen</h2>
@@ -248,7 +267,7 @@
 
                   <div class="product">
                     <div class="product-image">
-                      <span class="favorite">&#10084;</span>
+                      <span class="favorite"onclick="addToFavorites(this)">&#10084;</span>
                       <img src="images/s14.jpg" alt="Product 2">
                     </div>
                     <h2>Suède Sk8-Hi MTE-1 Schoenen</h2>
@@ -259,7 +278,7 @@
                   <div class="product-list">
                     <div class="product">
                       <div class="product-image">
-                        <span class="favorite">&#10084;</span>
+                        <span class="favorite"onclick="addToFavorites(this)">&#10084;</span>
                         <img src="images/s15.jpg" alt="Product 1">
                       </div>
                       <h2>Sk8-Hi Platform 2.0 Schoenen</h2>
@@ -269,7 +288,7 @@
 
                     <div class="product">
                       <div class="product-image">
-                        <span class="favorite">&#10084;</span>
+                        <span class="favorite"onclick="addToFavorites(this)">&#10084;</span>
                         <img src="images/s16.jpg" alt="Product 2">
                       </div>
                       <h2>Checkerboard Old Skool Platform</h2>
@@ -279,7 +298,7 @@
 
                     <div class="product">
                       <div class="product-image">
-                        <span class="favorite">&#10084;</span>
+                        <span class="favorite"onclick="addToFavorites(this)">&#10084;</span>
                         <img src="images/s17.jpg" alt="Product 2">
                       </div>
                       <h2>Sk8-Hi MTE-2 Schoenen</h2>
@@ -289,7 +308,7 @@
 
                     <div class="product">
                       <div class="product-image">
-                        <span class="favorite">&#10084;</span>
+                        <span class="favorite"onclick="addToFavorites(this)">&#10084;</span>
                         <img src="images/s18.jpg" alt="Product 2">
                       </div>
                       <h2>Sk8-Hi Tapered Stackform Schoenen</h2>
@@ -299,7 +318,7 @@
 
                     <div class="product">
                       <div class="product-image">
-                        <span class="favorite">&#10084;</span>
+                        <span class="favorite"onclick="addToFavorites(this)">&#10084;</span>
                         <img src="images/s19.jpg" alt="Product 2">
                       </div>
                       <h2>Suède Sk8-Hi Stacked Schoenen</h2>
@@ -309,13 +328,17 @@
 
                     <div class="product">
                       <div class="product-image">
-                        <span class="favorite">&#10084;</span>
+                        <span class="favorite"onclick="addToFavorites(this)">&#10084;</span>
                         <img src="images/s20.jpg" alt="Product 2">
                       </div>
                       <h2>Old Skool Stackform Schoenen</h2>
                       <p>meer kleuren</p>
                       <p>€95.00</p>
                     </div>
+                    <div class="like-container">
+                      <img src="heart.png" alt="Like">
+                      <span class="heart-count" id="like-count">0</span>
+                  </div>
                   </div>
 
                   <section>
